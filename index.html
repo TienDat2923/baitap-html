@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BABY THREE MINI SHOP</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <span>BABY</span>
+            <strong>THREE</strong>
+            <small>MINI SHOP</small>
+        </div>
+
+        <nav>
+            <a href="#home">Trang chủ</a>
+            <a href="#products">Sản phẩm</a>
+            <a href="#collection">Bộ sưu tập</a>
+            <a href="#contact">Liên hệ</a>
+        </nav>
+
+        <button class="cart-btn" onclick="showCart()">
+            🛍️ Giỏ hàng
+            <span id="cartCount">0</span>
+        </button>
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+
+        <div class="hero-text">
+
+            <p class="small-title">WELCOME TO</p>
+
+            <h1>
+                BABY<br>
+                <span>THREE</span>
+            </h1>
+
+            <p class="hero-description">
+                Những em bé nhỏ xinh dành cho những người
+                yêu thích sưu tầm blind box.
+            </p>
+
+            <a href="#products" class="shop-btn">
+                KHÁM PHÁ NGAY →
+            </a>
+
+        </div>
+
+        <div class="hero-decoration">
+            <div class="circle"></div>
+            <div class="heart">♡</div>
+            <div class="star">✦</div>
+        </div>
+
+    </section>
+
+
+    <!-- GIỚI THIỆU -->
+    <section class="intro">
+
+        <p class="section-label">BABY THREE COLLECTION</p>
+
+        <h2>
+            Một chút đáng yêu<br>
+            cho mỗi ngày
+        </h2>
+
+        <p>
+            Khám phá những mẫu Baby Three dễ thương,
+            từ blind box nhỏ xinh đến những phiên bản
+            plush lớn dành cho bộ sưu tập của bạn.
+        </p>
+
+    </section>
+
+
+    <!-- PRODUCTS -->
+    <section class="products-section" id="products">
+
+        <div class="section-heading">
+
+            <div>
+                <p class="section-label">OUR PRODUCTS</p>
+                <h2>Sản phẩm nổi bật</h2>
+            </div>
+
+            <p class="product-note">
+                Blind box • Plush • Collectible
+            </p>
+
+        </div>
+
+
+        <div class="product-grid">
+
+
+            <!-- PRODUCT 1 -->
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <span class="badge">HOT</span>
+
+                    <img
+                        src="hinhanh/hinh1.jfif"
+                        alt="Baby Three Macaron"
+                        class="product-real-image"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="product-type">BLIND BOX</p>
+
+                    <h3>Baby Three Macaron</h3>
+
+                    <p class="description">
+                        Dòng thỏ Macaron đáng yêu,
+                        màu sắc nhẹ nhàng và dễ sưu tầm.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>199.000₫</strong>
+
+                        <button
+                            onclick="openOrder('Baby Three Macaron', 199000)"
+                        >
+                            Mua hàng
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 2 -->
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <span class="badge new">NEW</span>
+
+                    <img
+                        src="hinhanh/hinh2.jfif"
+                        alt="Baby Three Lily Rabbit Town"
+                        class="product-real-image"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="product-type">BLIND BOX</p>
+
+                    <h3>Lily Rabbit Town</h3>
+
+                    <p class="description">
+                        Những chú thỏ nhỏ xinh
+                        với nhiều phiên bản khác nhau.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>259.000₫</strong>
+
+                        <button
+                            onclick="openOrder('Baby Three Lily Rabbit Town', 259000)"
+                        >
+                            Mua hàng
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 3 -->
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="hinhanh/hinh3.jfif"
+                        alt="Baby Three Cupid"
+                        class="product-real-image"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="product-type">BLIND BOX</p>
+
+                    <h3>Baby Three Cupid</h3>
+
+                    <p class="description">
+                        Phiên bản tình yêu với
+                        thiết kế đáng yêu và màu pastel.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>299.000₫</strong>
+
+                        <button
+                            onclick="openOrder('Baby Three Cupid', 299000)"
+                        >
+                            Mua hàng
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 4 -->
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="hinhanh/hinh4.jfif"
+                        alt="Baby Three Love Chain Time"
+                        class="product-real-image"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="product-type">CHARM</p>
+
+                    <h3>Love Chain Time</h3>
+
+                    <p class="description">
+                        Mẫu charm Baby Three
+                        nhỏ gọn, thích hợp treo túi.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>329.000₫</strong>
+
+                        <button
+                            onclick="openOrder('Baby Three Love Chain Time', 329000)"
+                        >
+                            Mua hàng
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 5 -->
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <span class="badge">BEST</span>
+
+                    <img
+                        src="hinhanh/hinh5.jfif"
+                        alt="Baby Three Romantic Ocean"
+                        class="product-real-image"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="product-type">BLIND BOX</p>
+
+                    <h3>Romantic Ocean</h3>
+
+                    <p class="description">
+                        Bộ sưu tập chủ đề đại dương
+                        với nhiều nhân vật khác nhau.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>269.000₫</strong>
+
+                        <button
+                            onclick="openOrder('Baby Three Romantic Ocean', 269000)"
+                        >
+                            Mua hàng
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 6 -->
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <span class="badge big">BIG</span>
+
+                    <img
+                        src="hinhanh/hinh6.jfif"
+                        alt="Baby Three Big Plush Animal"
+                        class="product-real-image"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="product-type">BIG PLUSH</p>
+
+                    <h3>Big Plush Animal</h3>
+
+                    <p class="description">
+                        Phiên bản plush kích thước lớn
+                        dành cho người thích sưu tầm.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>679.000₫</strong>
+
+                        <button
+                            onclick="openOrder('Baby Three Big Plush Animal', 679000)"
+                        >
+                            Mua hàng
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- COLLECTION -->
+    <section class="collection" id="collection">
+
+        <div class="collection-content">
+
+            <p class="section-label">BABY THREE WORLD</p>
+
+            <h2>
+                Find your<br>
+                little friend.
+            </h2>
+
+            <p>
+                Mỗi chiếc Baby Three đều mang
+                một biểu cảm và cá tính riêng.
+            </p>
+
+            <a href="#products" class="collection-btn">
+                XEM BỘ SƯU TẬP
+            </a>
+
+        </div>
+
+        <div class="collection-shape">
+            <span>♡</span>
+            <span>✦</span>
+            <span>♡</span>
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+
+        <p class="section-label">CONTACT</p>
+
+        <h2>Liên hệ với Baby Three Mini Shop</h2>
+
+        <div class="contact-grid">
+
+            <div>
+                <span>📍</span>
+                <h3>Địa chỉ</h3>
+                <p>Hà Nội, Việt Nam</p>
+            </div>
+
+            <div>
+                <span>📞</span>
+                <h3>Điện thoại</h3>
+                <p>0123 456 789</p>
+            </div>
+
+            <div>
+                <span>✉️</span>
+                <h3>Email</h3>
+                <p>babythree.shop@gmail.com</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-logo">
+            BABY THREE
+        </div>
+
+        <p>
+            © 2026 Baby Three Mini Shop.
+            Designed for learning.
+        </p>
+
+    </footer>
+
+
+    <!-- ORDER MODAL -->
+    <div class="modal" id="orderModal">
+
+        <div class="modal-box">
+
+            <button class="close-btn" onclick="closeOrder()">
+                ×
+            </button>
+
+            <p class="section-label">ORDER NOW</p>
+
+            <h2>Đặt hàng</h2>
+
+            <div class="order-product">
+
+                <span>Sản phẩm</span>
+
+                <strong id="orderProduct">
+                    Baby Three
+                </strong>
+
+            </div>
+
+            <div class="order-product">
+
+                <span>Đơn giá</span>
+
+                <strong id="orderPrice">
+                    0₫
+                </strong>
+
+            </div>
+
+
+            <form id="orderForm">
+
+                <label>Họ và tên</label>
+
+                <input
+                    type="text"
+                    id="customerName"
+                    placeholder="Nhập họ và tên"
+                    required
+                >
+
+
+                <label>Số điện thoại</label>
+
+                <input
+                    type="tel"
+                    id="customerPhone"
+                    placeholder="Nhập số điện thoại"
+                    required
+                >
+
+
+                <label>Địa chỉ nhận hàng</label>
+
+                <textarea
+                    id="customerAddress"
+                    placeholder="Nhập địa chỉ"
+                    required
+                ></textarea>
+
+
+                <label>Số lượng</label>
+
+                <div class="quantity">
+
+                    <button
+                        type="button"
+                        onclick="changeQuantity(-1)"
+                    >
+                        −
+                    </button>
+
+                    <span id="quantity">1</span>
+
+                    <button
+                        type="button"
+                        onclick="changeQuantity(1)"
+                    >
+                        +
+                    </button>
+
+                </div>
+
+
+                <div class="total">
+
+                    <span>Tổng tiền</span>
+
+                    <strong id="totalPrice">
+                        0₫
+                    </strong>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="submit-btn"
+                >
+                    XÁC NHẬN ĐẶT HÀNG
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- SUCCESS -->
+    <div class="success-popup" id="successPopup">
+
+        <div class="success-box">
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+            <h2>Đặt hàng thành công!</h2>
+
+            <p>
+                Cảm ơn bạn đã mua hàng tại
+                Baby Three Mini Shop.
+            </p>
+
+            <button onclick="closeSuccess()">
+                Đóng
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
